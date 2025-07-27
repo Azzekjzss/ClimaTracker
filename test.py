@@ -104,6 +104,12 @@ st.markdown("""
 
 # Diccionario de ciudades chilenas con coordenadas
 CIUDADES_CHILE = {
+    "Castro": {"lat": -42.4807, "lon": -73.7635, "region": "Los Lagos"},
+    "Lonquimay": {"lat": -38.4569, "lon": -71.3691, "region": "La Araucanía"},
+    "Carillanca": {"lat": -38.6949, "lon": -72.4179, "region": "La Araucanía"},
+    "Puerto Aysén": {"lat": -45.5833, "lon": -72.0667, "region": "Aysén"},
+    "Osorno": {"lat": -40.5732, "lon": -73.1333, "region": "Los Lagos"},
+    "Curicó": {"lat": -34.9833, "lon": -71.2500, "region": "Maule"},
     "Santiago": {"lat": -33.4489, "lon": -70.6693, "region": "Metropolitana"},
     "Valparaíso": {"lat": -33.0472, "lon": -71.6127, "region": "Valparaíso"},
     "Concepción": {"lat": -36.8201, "lon": -73.0444, "region": "Biobío"},
