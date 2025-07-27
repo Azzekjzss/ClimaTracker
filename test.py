@@ -9,7 +9,6 @@ import json
 import plotly.express as px
 import plotly.graph_objects as go
 import pathlib
-import base64
 from pathlib import Path
 from plotly.subplots import make_subplots
 from datetime import datetime, timedelta
@@ -17,9 +16,6 @@ from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 from string import Template
 import time
-
-BASE_DIR = Path(__file__).parent
-STATIC_DIR = BASE_DIR / "static"
 
 # Configuración de la página
 st.set_page_config(
