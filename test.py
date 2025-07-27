@@ -1209,7 +1209,7 @@ def render_weather_card(city_name, daily_data):
             st.markdown(f"""
             <div class="uniform-card" style="border-left-color: {temp_color};">
                 <p class="uniform-title">Temp Máx/Mín</p>
-                <p class="uniform-value" style="color:{temp_color};">{temp_max:.1f}°C / {temp_min:.1f}°C</p>
+                <p class="uniform-value" style="color:{temp_color};">{temp_max:.1f}° / {temp_min:.1f}°C</p>
                 <p class="uniform-extra">Amplitud: {temp_range:.1f}°</p>
             </div>
             """, unsafe_allow_html=True)
