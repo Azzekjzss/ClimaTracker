@@ -1126,25 +1126,6 @@ def process_weather_data(data):
         traceback.print_exc()
         return None, None
     
-def load_weather_template():
-    """Carga la plantilla HTML y los recursos necesarios"""
-    try:
-        # Cargar CSS
-        css_path = STATIC_DIR / "css" / "weather_card.css"
-        with open(css_path, "r", encoding="utf-8") as f:
-            css = f.read()
-        
-        # Cargar plantilla HTML
-        template_path = STATIC_DIR / "templates" / "weather_card.html"
-        with open(template_path, "r", encoding="utf-8") as f:
-            template = f.read()
-            
-        return css, template
-        
-    except Exception as e:
-        st.error(f"Error cargando plantillas: {str(e)}")
-        return "", ""
-
 def truncate_decimals(value, decimals=3):
     """
     Trunca un número a la cantidad específica de decimales sin redondear
@@ -1161,8 +1142,6 @@ def truncate_decimals(value, decimals=3):
         return int(float(value) * multiplier) / multiplier
     except (ValueError, TypeError):
         return 0.0
-
-WEATHER_CSS, WEATHER_TEMPLATE = load_weather_template()
 
 def render_weather_card(city_name, daily_data):
     """Renderiza una tarjeta climática con estilos uniformes y tamaños de letra aumentados"""
