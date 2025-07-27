@@ -1,6 +1,6 @@
 streamlit==1.32.0
-pandas==2.1.4  # Versión más reciente con wheels precompilados
-numpy==1.26.0  # Versión compatible
+pandas==2.0.3  # Versión con wheels para Python 3.10
+numpy==1.24.3
 requests==2.31.0
 plotly==5.18.0
 python-dateutil==2.8.2
